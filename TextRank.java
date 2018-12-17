@@ -117,6 +117,7 @@ public class TextRank {
 
     /**
      * Build similarity matrix between nxn lines. Matrix is filled with cosine similarity value
+     similarityMatrix[i][j] is the probability of transitioning from line i to line j
      * @param content
      * @return
      */
@@ -229,7 +230,6 @@ public class TextRank {
 
     private static List<String> getContentList()  {
         String contentPath = "../blog-content.txt";
-
 
         List<String> content = new ArrayList<>();
         try {
